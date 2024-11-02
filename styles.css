@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f7f7f7; /* Светло-серый фон для контраста */
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+}
+
+header img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.message {
+    font-weight: bold; /* Жирный текст */
+    color: #000000;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.login-section {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+.login-section h2 {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #000000; /* Чёрная рамка для полей ввода */
+    background-color: #e0e0e0; /* Светло-серый фон для полей ввода */
+    color: #000000;
+    border-radius: 0;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #000000; /* Чёрная рамка при фокусе */
+    background-color: #ffffff; /* Белый фон при фокусе */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #000000; /* Чёрный фон для кнопки */
+    color: #ffffff; /* Белый текст для кнопки */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 0;
+}
+
+.login-form button:hover {
+    background-color: #333333; /* Тёмно-серый фон при наведении */
+    border-color: #ffffff; /* Белая рамка при наведении */
+}
+
+.login-form button:active {
+    background-color: #444444; /* Ещё более тёмный фон при нажатии */
+}
+
+.search-container {
+    display: flex;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-container button:active {
+    transform: scale(0.95);
+    background-color: #444444;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.navh {
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.navi a {
+    padding: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 0;
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.navi a:hover {
+    background-color: white;
+    color: black;
+}
+
+.news {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.news h1 {
+    color: #333;
+}
+
+.news-item {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.news-item h2 {
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+}
+
+.news-item p {
+    color: #000000;
+}
+
+.news-item img {
+    width: 700px;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.gallery {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000000;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.newstext {
+    color: red;
+}
+
+.divider {
+    height: 2px;
+    background-color: black;
+    margin: 30px 0;
+}
+
+.scp-objects {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.scp-objects h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.scp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.scp-item {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scp-item h3 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.scp-item p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.scp-item img {
+    width: 100%;
+    height: 150px; /* Устанавливаем фиксированную высоту для изображения */
+    object-fit: cover; /* Обрезаем изображение для сохранения пропорций */
+}
+
+.scp-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scp-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #000000;
+    transition: background-color 0.3s ease;
+}
+
+.scp-link:hover {
+    background-color: #444444;
+}
+
+/* Стили для кнопки Home */
+.home-button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* Изменение цвета кнопки при наведении */
+.home-button:hover {
+    background-color: #555;
+}
+
+.lore-title {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+
+/* Text animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.loader-image {
+    width: 60px; /* Установите ширину изображения */
+    height: 60px; /* Установите высоту изображения */
+    animation: spin 2s linear infinite; /* Анимация вращения */
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff; /* Changed to solid white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    animation: fadeOut 3s forwards;
+}
+
+/* Анимация вращения */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden; /* Скрыть элемент, когда он не должен отображаться */
+    }
+}
+
+.first {
+    opacity: 0; /* Скрываем основной контент по умолчанию */
+    animation: fadeIn 3s forwards 3s; /* Плавное появление через 3 секунды */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imglore {
+    text-align: center;
+}
+
+.imglore img {
+    height: 350px;
+}

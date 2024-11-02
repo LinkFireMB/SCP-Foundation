@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="scpemblem.png" type="image/x-icon">
+    <title>SCP - Login</title>
+</head>
+<body>
+    
+    <header>
+        <img src="scp.png" alt="SCP Logo">
+        <nav>
+            <div class="message">Please log in to access this section.</div>
+        </nav>
+    </header>
+
+    <div class="loader-container">
+        <img src="scpemblem.png" alt="Loading..." class="loader-image">
+    </div>
+    
+
+    <main class="first">
+        <section class="login-section">
+            <h1>Login</h1>
+            <form action="login.html" method="GET" class="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
